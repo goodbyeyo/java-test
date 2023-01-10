@@ -1,5 +1,7 @@
 package com.wook.javatest;
 
+import com.wook.javatest.study.StudyStatus;
+
 public class Study {
 
     private StudyStatus status = StudyStatus.DRAFT; // 기본값 설정

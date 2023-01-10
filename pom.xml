@@ -19,16 +19,38 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!--
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+        -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!--JUnit Jupiter Engine to depend on the JUnit5 engine and JUnit 5 API -->
+        <!--
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -36,20 +58,22 @@
             <scope>test</scope>
         </dependency>
 
-        <!--JUnit Jupiter Engine to depend on the JUnit4 engine and JUnit 4 API  -->
+        &lt;!&ndash;JUnit Jupiter Engine to depend on the JUnit4 engine and JUnit 4 API  &ndash;&gt;
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
-            <!--<version>${junit-jupiter.version}</version>-->
+            &lt;!&ndash;<version>${junit-jupiter.version}</version>&ndash;&gt;
         </dependency>
 
-        <!-- Optional : override the JUnit 4 API version provided by junit-vintage-engine -->
+        &lt;!&ndash; Optional : override the JUnit 4 API version provided by junit-vintage-engine &ndash;&gt;
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <!--<version>${junit.version}</version>-->
+            &lt;!&ndash;<version>${junit.version}</version>&ndash;&gt;
             <scope>test</scope>
         </dependency>
+        -->
+
     </dependencies>
 
     <build>
