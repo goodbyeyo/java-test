@@ -49,6 +49,19 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.9.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.passay</groupId>
+            <artifactId>passay</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
         <!--JUnit Jupiter Engine to depend on the JUnit5 engine and JUnit 5 API -->
         <!--
         <dependency>
