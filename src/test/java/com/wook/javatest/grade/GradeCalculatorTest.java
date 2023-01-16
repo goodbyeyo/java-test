@@ -32,14 +32,20 @@ public class GradeCalculatorTest {
 
     @Test
     void calculateGradeTest() {
+        // given
         List<Course> courses = List.of(
-                new Course("운영체제", 3, "B+"),
-                new Course("자료구조", 3, "A+"));
+                new Course("운영체제", 2, "A+"), // 2 x 4.5 = 9
+                new Course("자료구조", 3, "A"),  // 3 x 4.0 = 12.0
+                new Course("알고리즘", 3, "B")); // 3 x 3.0 = 9.0
+
         GradeCalculator gradeCalculator = new GradeCalculator(courses);
 //        GradeCalculator gradeCalculator2 = new GradeCalculator(new Courses(courses));
+
+        // when
         double gradeResult = gradeCalculator.calculateGrade();
 
-        assertThat(gradeResult).isEqualTo(4.0);
+        // then
+        assertThat(gradeResult).isEqualTo(3.75);
     }
 
 
