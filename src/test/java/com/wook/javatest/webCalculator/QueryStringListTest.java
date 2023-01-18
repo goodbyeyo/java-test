@@ -1,8 +1,7 @@
 package com.wook.javatest.webCalculator;
 
+import com.wook.javatest.webCalculator.step1.QueryStrings;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -1,5 +1,7 @@
 package com.wook.javatest;
 
+import com.wook.javatest.webCalculator.step3.CustomWebThreadPoolServer;
+
 import java.io.IOException;
 
 // GET /calcauldate?operand1=7&operator=*&operand2=5 return 35
@@ -9,6 +11,8 @@ import java.io.IOException;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        new CustomWebApplicationServer(8080).start();
+        // new CustomWebApplicationServer(8080).start();
+        // new CustomWebNewThreadServer(8080).start();
+        new CustomWebThreadPoolServer(8080).start();
     }
 }

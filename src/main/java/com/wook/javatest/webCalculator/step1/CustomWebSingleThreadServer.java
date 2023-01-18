@@ -1,10 +1,7 @@
-package com.wook.javatest;
+package com.wook.javatest.webCalculator.step1;
 
 import com.wook.javatest.calculator.Calculator;
 import com.wook.javatest.calculator.v2_interface.PositiveNumber;
-import com.wook.javatest.webCalculator.HttpRequest;
-import com.wook.javatest.webCalculator.HttpResponse;
-import com.wook.javatest.webCalculator.QueryStrings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,13 +10,13 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-public class CustomWebApplicationServer {
+public class CustomWebSingleThreadServer {
 
     private final int port;
 
-    private final Logger logger = LoggerFactory.getLogger(CustomWebApplicationServer.class);
+    private final Logger logger = LoggerFactory.getLogger(CustomWebSingleThreadServer.class);
 
-    public CustomWebApplicationServer(int port) {
+    public CustomWebSingleThreadServer(int port) {
         this.port = port;
     }
 
@@ -34,7 +31,7 @@ public class CustomWebApplicationServer {
                 logger.info("[CustomWebApplicationServer] client connected");
 
                 /**
-                 * Step 1 : 사용자 요처을 메인 Thread 가 처리
+                 * Step 1 : 사용자 요청을 메인 Thread 가 처리
                  */
                 try {
                     InputStream in = clientSocket.getInputStream();

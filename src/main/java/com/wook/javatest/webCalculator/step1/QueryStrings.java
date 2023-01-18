@@ -1,4 +1,4 @@
-package com.wook.javatest.webCalculator;
+package com.wook.javatest.webCalculator.step1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
