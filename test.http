@@ -1,0 +1,3 @@
+# /calculate?operand1=7&operator=*&operand2=5
+# GET http://localhost:8080
+GET http://localhost:8080/calculate?operand1=90&operator=-&operand2=7

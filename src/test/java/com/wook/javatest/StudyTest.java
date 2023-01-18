@@ -1,5 +1,6 @@
 package com.wook.javatest;
 
+import com.wook.javatest.study.Study;
 import com.wook.javatest.study.StudyStatus;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.condition.*;

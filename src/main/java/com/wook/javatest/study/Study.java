@@ -1,4 +1,4 @@
-package com.wook.javatest;
+package com.wook.javatest.study;
 
 import com.wook.javatest.study.StudyStatus;
 
