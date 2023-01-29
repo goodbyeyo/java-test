@@ -1,5 +1,6 @@
 HELP.md
 target/
+webapp/WEB_INF/classes/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
