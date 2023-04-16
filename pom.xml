@@ -62,6 +62,19 @@
             <version>1.6.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.python</groupId>
+            <artifactId>jython-standalone</artifactId>
+            <version>2.7.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.tensorflow</groupId>
+            <artifactId>tensorflow-core-platform</artifactId>
+            <version>0.4.2</version>
+        </dependency>
+
+
         <!--JUnit Jupiter Engine to depend on the JUnit5 engine and JUnit 5 API -->
         <!--
         <dependency>
