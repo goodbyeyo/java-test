@@ -4,7 +4,7 @@ import tensorflow as tf
 
 def count_fruits(image_path, model_path):
     # 이미지 파일 불러오기
-    image = tf.keras.preprocessing.image.load_img(image_path, target_size=(224, 224))
+    image = tf.keras.preprocessing.image.load_img(image_path, target_size=(100, 100))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
     input_arr = tf.expand_dims(input_arr, 0)
 
@@ -16,9 +16,11 @@ def count_fruits(image_path, model_path):
     return fruit_count
 
 def decode_predictions(predictions):
-    # 예측 결과를 해석 반올림
-    fruit_count = int(round(predictions[0][0]))
-    return fruit_count
+    # 가장 높은 확률을 가진 과일 인덱스를 찾습니다.
+    fruit_index = np.argmax(predictions)
+
+    # 이 예제에서는 과일의 종류를 구분하지 않고 개수만 확인하므로, 1을 반환합니다.
+    return 1
 
 if __name__ == "__main__":
     image_path = sys.argv[1]
